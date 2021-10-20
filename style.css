@@ -1,0 +1,156 @@
+:root {
+  --btn-text-color: #343a40;
+  --src-background-color: #4d90fe;
+  --src-background-color-dark: #4582e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+/* -------- NAV -------- */
+
+.nav-btns {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: var(--btn-text-color);
+  font-weight: 500;
+}
+
+.btn:active,
+.btn:hover {
+  text-decoration: underline;
+}
+
+/* -------- FORM -------- */
+
+.form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem 0;
+
+  max-width: 130rem;
+}
+
+.text-box {
+  font-size: 2rem;
+  color: black;
+  height: 4.4rem;
+  width: 50rem;
+  border: 1px solid #ced4da;
+  padding-left: 1.8rem;
+}
+
+.text-box-commom {
+  border-radius: 50px;
+}
+
+.search-btn {
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #f1f3f5;
+  color: var(--btn-text-color);
+  font-weight: 200;
+}
+
+/* -------- SEARCH -------- */
+
+.btn-src {
+  display: flex;
+  gap: 3.2rem;
+}
+
+/* -------- ADVANCED SEARCH -------- */
+
+.forms-adv {
+  max-width: 130rem;
+  padding: 4.8rem 0 0 3.2rem;
+  color: var(--btn-text-color);
+}
+
+.google-logo-adv {
+  display: inline-block;
+  height: 3.6rem;
+  width: fit-content;
+  margin-bottom: 2.4rem;
+}
+
+.form-adv {
+  display: grid;
+  max-width: 70rem;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.form-title {
+  grid-column: 1 / -1;
+  font-size: 2.4rem;
+}
+
+.text-box-title {
+  font-size: 1.8rem;
+  justify-self: start;
+  align-self: center;
+}
+
+.text-box-adv {
+  height: 3.2rem;
+  justify-self: start;
+  align-self: center;
+  padding-left: 0.7rem !important;
+  width: 100% !important;
+  border-radius: 2px;
+}
+
+.search-btn-adv {
+  grid-column: -2 / -1;
+  justify-self: end;
+}
+
+.search-btn-adv {
+  width: 20rem;
+  background-color: var(--src-background-color) !important;
+  color: white !important;
+  border-radius: 2px;
+}
+
+.search-btn-adv:hover,
+.search-btn-adv:active {
+  background-color: var(--src-background-color-dark) !important;
+  transition: all 0.3s;
+}
